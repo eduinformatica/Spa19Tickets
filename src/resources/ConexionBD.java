@@ -38,7 +38,7 @@ public class ConexionBD {
                 urlBD += parametro.get("database") + "?user=" + parametro.get("usuario") + "&password=" + parametro.get("clave");
                 
                 conn = DriverManager.getConnection(urlBD, parametro.get("usuario").toString(), parametro.get("clave").toString());
-                System.out.println("!!Conexion Exitosa...");
+//                System.out.println("!!Conexion Exitosa...");
             }
             
         } catch(FileNotFoundException ex) {
