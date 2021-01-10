@@ -33,5 +33,36 @@ public class Usuario {
     public void setRut(String dni) {
         this.rut = dni;
     }
-   
+    
+    
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
+    public String getApaterno() {
+        return apaterno;
+    }
+    public void setApaterno(String apaterno) {
+        this.apaterno = apaterno;
+    }
+    
+    
+    public String getAmaterno() {
+        return amaterno;
+    }
+    public void setAmaterno(String amaterno) {
+        this.amaterno = amaterno;
+    }
+    
+    
+    public String getUsu_Password() {
+        return usu_password;
+    }
+    public void setUsu_Password(String clave) {
+        this.usu_password = clave;
+    }
 }
