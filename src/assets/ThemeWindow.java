@@ -2,7 +2,7 @@ package assets;
 
 /**
  *
- * @author ites_
+ * @author DAGG
  * @version 1.0
  */
 public class ThemeWindow {
