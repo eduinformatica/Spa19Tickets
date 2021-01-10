@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS aiep_ene;
+USE aiep_ene;
+
