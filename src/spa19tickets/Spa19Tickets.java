@@ -28,6 +28,6 @@ public class Spa19Tickets {
         rut = bf.readLine();
         System.out.print("Contraseña: ");
         pass = bf.readLine();
-        JOptionPane.showMessageDialog(null, "Usuario: "+rut+"\nClave: "+pass, "Informacion Recibida - Spa19Tickets", JOptionPane.INFORMATION_MESSAGE);
+//        JOptionPane.showMessageDialog(null, "Usuario: "+rut+"\nClave: "+pass, "Informacion Recibida - Spa19Tickets", JOptionPane.INFORMATION_MESSAGE);
     }  
 }
