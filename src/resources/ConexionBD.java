@@ -29,7 +29,7 @@ public class ConexionBD {
             Object urlFile = parser.parse(new FileReader("src\\config\\settings.json"));
             JSONObject conexion = (JSONObject) urlFile;
             
-            JSONArray array = (JSONArray) conexion.get("CONN_MYSQL");
+            JSONArray array = (JSONArray) conexion.get("CONN_POSTGRES");
             for (int i = 0; i < array.size(); i++) {
                 JSONObject parametro = (JSONObject) array.get(i);
                 
