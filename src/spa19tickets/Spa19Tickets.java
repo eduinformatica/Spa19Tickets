@@ -2,23 +2,24 @@ package spa19tickets;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import javax.swing.JOptionPane;
 import assets.ThemeWindow;
 import java.io.IOException;
-import resources.ConexionBD;
+import BBDD.ConexionBD;
+import aiep.bean.BNUsuario;
+import java.sql.SQLException;
 
 /**
- 
  * @author DAGG
  * @version 1.0
  */
 public class Spa19Tickets {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException {
         ThemeWindow tm = new ThemeWindow();
         tm.WindowTheme();
         ConexionBD x = new ConexionBD();
         x.getConexion();
+        BNUsuario bnu = new BNUsuario();
         
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String rut, pass;
@@ -28,6 +29,12 @@ public class Spa19Tickets {
         rut = bf.readLine();
         System.out.print("Contraseña: ");
         pass = bf.readLine();
-//        JOptionPane.showMessageDialog(null, "Usuario: "+rut+"\nClave: "+pass, "Informacion Recibida - Spa19Tickets", JOptionPane.INFORMATION_MESSAGE);
+//        System.out.println(bnu.Authenticate(rut, pass));
+        
+        if (bnu.Authenticate(rut, pass)) {
+            System.out.println("Usuario validado");
+        } else {
+            System.err.println("Usuario y Contraseña invalidas");
+        }
     }  
 }
