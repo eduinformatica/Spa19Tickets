@@ -7,62 +7,70 @@ package aiep.model;
  */
 public class Usuario {
     
-    private int idusuario; //idusuario
-    private String rut;
-    private String nombre;
-    private String apaterno;
-    private String amaterno;
-    private String usu_password; //clave
-//    private int idperfil;
+    private int usuId;
+    private String usuRut;
+    private String usuNombre;
+    private String usuApaterno;
+    private String usuAmaterno;
+    private String usuClave;
+    private Perfil perId;
     
-    // Cosntructor vacio
+    // Constructor vacio
     public Usuario() {}
-    
-    
-    public int getId() {
-        return idusuario;
+
+    public int getUsuId() {
+        return usuId;
     }
-    public void setId(int idusuario) {
-        this.idusuario = idusuario;
+
+    public void setUsuId(int usuId) {
+        this.usuId = usuId;
     }
-    
-    
-    public String getRut() {
-        return rut;
+
+    public String getUsuRut() {
+        return usuRut;
     }
-    public void setRut(String dni) {
-        this.rut = dni;
+
+    public void setUsuRut(String usuRut) {
+        this.usuRut = usuRut;
     }
-    
-    
-    public String getNombre() {
-        return nombre;
+
+    public String getUsuNombre() {
+        return usuNombre;
     }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+
+    public void setUsuNombre(String usuNombre) {
+        this.usuNombre = usuNombre;
     }
-    
-    
-    public String getApaterno() {
-        return apaterno;
+
+    public String getUsuApaterno() {
+        return usuApaterno;
     }
-    public void setApaterno(String apaterno) {
-        this.apaterno = apaterno;
+
+    public void setUsuApaterno(String usuApaterno) {
+        this.usuApaterno = usuApaterno;
     }
-    
-    
-    public String getAmaterno() {
-        return amaterno;
+
+    public String getUsuAmaterno() {
+        return usuAmaterno;
     }
-    public void setAmaterno(String amaterno) {
-        this.amaterno = amaterno;
+
+    public void setUsuAmaterno(String usuAmaterno) {
+        this.usuAmaterno = usuAmaterno;
     }
-    
-    
-    public String getUsu_Password() {
-        return usu_password;
+
+    public String getUsuClave() {
+        return usuClave;
     }
-    public void setUsu_Password(String clave) {
-        this.usu_password = clave;
+
+    public void setUsuClave(String usuClave) {
+        this.usuClave = usuClave;
+    }
+
+    public Perfil getPerId() {
+        return perId;
+    }
+
+    public void setPerId(Perfil perId) {
+        this.perId = perId;
     }
 }
