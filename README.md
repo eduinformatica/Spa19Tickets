@@ -1,1 +1,6 @@
-# Spa19Tickets
+# EMPRESA DEL RUBRO SANITARIO
+
+Sistema para toma de requerimientos, utilizando lenguaje Java  y PostgreSQL como motor de base de datos. 
+
+## Explicación del proyecto
+> Debido a la pandemia toda la empresa ha debido adecuar su funcionamiento a la modalidad de teletrabajo, varios de los departamentos de la empresa han logrado continuar operando sin mayores inconvenientes, entre ellos la subgerencia de informática, la que se encarga de asegurar el correcto funcionamiento de todos los sistemas de esta empresa. Con esta nueva modalidad de teletrabajo la subgerencia ha notado que internamente tienen deficiencias de funcionamiento, debido a que cuando trabajaban de manera presencial y necesitaban realizar algún requerimiento como por ejemplo un restore de B.D, buscar un registro especifico en la base de datos o respaldar un sitio para entregarlo a algún proveedor de servicios; completaban una hoja y la entregaban al encargado respectivo sin mayor dificultad, pero actualmente con el teletrabajo todas estas situaciones se informan vía telefónica o por correo, lo que ha provocado la pérdida de trazabilidad de estos requerimientos. Esta situación ha interferido en los indicadores de la subgerencia ya que no pueden determinar cuántos requerimientos se han generado internamente.# Spa19Tickets
