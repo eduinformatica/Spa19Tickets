@@ -22,14 +22,17 @@ public class Spa19Tickets {
         BNUsuario bnu = new BNUsuario();
         
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        String rut, pass;
+        String rut;
+//        String pass = "";
+        String pass;
         
         System.out.println("#### Authentificacion ####");
         System.out.print("Usuario: ");
         rut = bf.readLine();
         System.out.print("Contraseña: ");
+//        pass = pass.replace(bf.readLine(), "*");
+//        pass = bf.readLine().replace(pass, "*");
         pass = bf.readLine();
-//        System.out.println(bnu.Authenticate(rut, pass));
         
         if (bnu.Authenticate(rut, pass)) {
             System.out.println("Usuario validado");
