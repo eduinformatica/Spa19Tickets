@@ -60,11 +60,12 @@ CREATE TABLE IF NOT EXISTS requerimiento(
 --	VALUES ('222222222','informatica','prueba','prueba',md5('test'), 1);
 --INSERT INTO usuario(usu_rut, usu_nombre, usu_apaterno, usu_amaterno, usu_clave, per_idperfil)
 --	VALUES ('111111111','prueba','prueba','prueba',md5('test'), 2);
+--INSERT INTO usuario(usu_rut, usu_nombre, usu_apaterno, usu_amaterno, usu_clave, per_idperfil)
+--	VALUES('29644095k','Daniel','Gomez','Gomez',md5('daniel93'),1);
 
 --SELECT usu_rut, CONCAT(usu_nombre || ' ' || usu_apaterno || ' ' || usu_amaterno), u.per_idperfil AS "id", per_nombre 
 SELECT usu_rut AS "rut", CONCAT_WS(' ', usu_nombre, usu_apaterno, usu_amaterno) AS "usuario", 
 	u.per_idperfil AS "id perfil", per_nombre AS "perfil"
 FROM usuario u 
-INNER JOIN perfil p ON p.idperfil = u.per_idperfil 
---WHERE usu_rut = '111111111' and usu_clave = md5('test'); 
+INNER JOIN perfil p ON p.idperfil = u.per_idperfil  
 ORDER BY u.per_idperfil ASC
